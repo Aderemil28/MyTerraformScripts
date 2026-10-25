@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is git-ignored.
+# No passwords here: the password comes from Secret Manager.
+
+project_id    = "my-dev-project"
+region        = "northamerica-northeast2"
+network_name  = "my-vpc"
+instance_name = "appdb-pg-dev"

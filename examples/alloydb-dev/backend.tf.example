@@ -1,0 +1,11 @@
+# Rename to backend.tf to keep state in a GCS bucket instead of on your laptop.
+# The bucket should have versioning on, uniform access, and access limited to
+# the people and service accounts that run Terraform: state contains the
+# database password.
+
+terraform {
+  backend "gcs" {
+    bucket = "my-terraform-state-bucket"
+    prefix = "alloydb/appdb-dev"
+  }
+}
