@@ -49,7 +49,7 @@ A full working example is in [examples/cloudsql-postgres-dev](../../examples/clo
 | `instance_name` | Instance name | required |
 | `network_id` | VPC network ID | required |
 | `allocated_ip_range` | Private services access range name | `null` |
-| `database_version` | For example `POSTGRES_16` | `POSTGRES_16` |
+| `database_version` | For example `POSTGRES_18` | `POSTGRES_18` |
 | `edition` | `ENTERPRISE` or `ENTERPRISE_PLUS` (the tier must match) | `ENTERPRISE` |
 | `tier` | Machine type | `db-custom-2-7680` |
 | `availability_type` | `REGIONAL` or `ZONAL` | `REGIONAL` |

@@ -30,9 +30,9 @@ variable "allocated_ip_range" {
 }
 
 variable "database_version" {
-  description = "For example POSTGRES_16."
+  description = "PostgreSQL major version, for example POSTGRES_18 (the current release, and Cloud SQL's default for new instances)."
   type        = string
-  default     = "POSTGRES_16"
+  default     = "POSTGRES_18"
 }
 
 variable "edition" {

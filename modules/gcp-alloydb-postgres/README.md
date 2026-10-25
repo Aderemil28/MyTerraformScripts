@@ -53,7 +53,7 @@ A full working example is in [examples/alloydb-dev](../../examples/alloydb-dev).
 | `network_id` | VPC network ID | required |
 | `initial_user_password` | Password for the initial user (sensitive; read from Secret Manager) | required |
 | `allocated_ip_range` | Private services access range name | `null` |
-| `database_version` | PostgreSQL major version | `POSTGRES_16` |
+| `database_version` | PostgreSQL major version (`POSTGRES_14` to `POSTGRES_18`) | `POSTGRES_18` |
 | `initial_user` | Initial user name | `postgres` |
 | `availability_type` | `REGIONAL` or `ZONAL` | `REGIONAL` |
 | `primary_cpu_count` | vCPUs for the primary | `2` |

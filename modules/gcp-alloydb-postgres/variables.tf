@@ -30,9 +30,9 @@ variable "allocated_ip_range" {
 }
 
 variable "database_version" {
-  description = "PostgreSQL major version, for example POSTGRES_16. Raising it later upgrades the cluster, which cannot be undone."
+  description = "PostgreSQL major version: POSTGRES_14 to POSTGRES_18. Defaults to 18, the latest AlloyDB supports (AlloyDB itself defaults to 17 if none is set). Raising it later upgrades the cluster, which cannot be undone."
   type        = string
-  default     = "POSTGRES_16"
+  default     = "POSTGRES_18"
 }
 
 variable "initial_user" {
